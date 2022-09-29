@@ -1,5 +1,4 @@
 #!/usr/bin/python3
 def search_repace(my_list, search, replace):
-    def s_r_elm(elm):
-        return (elm if elm != search else replace)
-    return list(map(s_r_elm, my_list))
+    new_list = my_list(map(lambda x: replace if x == search else x, my_list))
+    return (new_list)
