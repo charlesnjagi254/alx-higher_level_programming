@@ -1,4 +1,5 @@
 #!/usr/bin/python3
 def search_repace(my_list, search, replace):
-    new_list = my_list(map(lambda x: replace if x == search else x, my_list))
+    my_list = [1,2,3,4,5,4,3,2,89]
+    new_list = search_replace(map(lambda x: replace if x == search else x, my_list))
     return (new_list)
